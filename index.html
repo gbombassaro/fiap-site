@@ -3,30 +3,38 @@
   <head>
     <title>Primeiro site da FIAP 2020 - Bem vindo!</title>
     <meta charset="utf-8">
-    <link rel='stylesheet' type='text/css' href='styles.css' title='General styles' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <link rel='stylesheet' type='text/css' href='fonts.css' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class='topbar'>
-      <h1>Primeiro site da FIAP 2020 - Bem vindo!</h1>
+      <h1 class='title-page'>O Diário dos Robôs</h1>
+      <p class='system-font'>Cadastre-se</p>
     </div>
     <div class='home-container'>
-      <div class='menu-item'>
-        <a href='page1.html' aria-label='Primeiro item do menu: Aplicação do robô 1'>
-          <p class='item'>Aplicação do robô 1</p>
-        </a>
-      </div>
-      <div class='menu-item'>
-        <a href='page2.html' aria-label='Segundo item do menu: Aplicação do robô 2'>
-          <p class='item'>Aplicação do robô 2</p>
-        </a>
-      </div>
-      <div class='menu-item'>
+      <a href='page1.html' aria-label='Primeiro item do menu: Aplicação do robô 1'>
+        <div class='teaser'>
+          <img src='image-article-1.jpg' alt='Imagem no corpo do texto mostar o robô Robin'/>
+          <p class='teaser-title'>Robô Robin que ensina crianças a falar novas línguas</p>
+          <p class='teaser-subtitle'>O primeiro caso de estudo é um projeto piloto executado na Alemanha, o robô chamado Robin. Um robô com formato humanóide e uma expressão amigável, tem como objetivo ensinar crianças de 4 a 6 anos a falar novas línguas.</p>
+        </div>
+      </a>
+      <a href='page2.html' aria-label='Primeiro item do menu: Aplicação do robô 1'>
+        <div class='teaser'>
+          <p class='teaser-title'>O robô de brinquedo que ensina crianças a programar</p>
+          <p class='teaser-subtitle'>O segundo caso de estudo é o robô chamado Codie. Codie ensina crianças a programar utilziando uma linguagem lúdica e de fácil comrpeensão. Tem como principal objetivo ensinar e aperfeiçoar conceitos de lógica nas crianças.</p>
+        </div>
+      </a>
+      <!-- <div class='menu-item'>
         <a href='form.html' aria-label='Terceiro item do menu: Formulário sem dados'>
           <p class='item'>Formulário sem dados</p>
         </a>
-      </div>
-      <p>Giovanni Bombassaro - FIAP 2020</p>
+      </div> -->
+      <!-- <p>Giovanni Bombassaro - FIAP 2020</p> -->
     </div>
   </body>
 </html>

@@ -1,0 +1,28 @@
+.title-page {
+  font-size: 24px;
+  font-family: 'IBM Plex Sans';
+}
+.system-font {
+  font-size: 18px;
+  font-family: 'IBM Plex Sans';
+}
+
+.teaser-title {
+  font-size: 32px;
+  font-family: 'Merriweather';
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.teaser-subtitle {
+  font-size: 20px;
+  font-family: 'IBM Plex Sans';
+  margin: 0px;
+}
+
+
+@media (min-width: 960px) {
+  .system-font {
+    font-size: 20px;
+  }
+}
