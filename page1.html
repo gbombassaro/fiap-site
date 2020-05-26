@@ -4,28 +4,43 @@
   <head>
     <title>ROBO 1</title>
     <meta charset="utf-8">
-    <link rel='stylesheet' type='text/css' href='styles.css' title='General styles' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <link rel='stylesheet' type='text/css' href='fonts.css' />
+    <link rel='stylesheet' type='text/css' href='topbar.css' />
+    <link rel='stylesheet' type='text/css' href='article.css' />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class='topbar'>
-      <h1>Primeiro site da FIAP 2020 - Bem vindo!</h1>
+      <a href='index.html' class='register-wrap'>
+        <h1 class='title-page'>O Diário dos Robôs</h1>
+      </a>
+      <a href='form.html' class='register-wrap'>
+        <p class='system-font register-title'>Cadastre-se</p>
+        <img class='subscribe-icon' src='subscribe-icon.svg' />
+      </a>
     </div>
-    <div class='article'>
-      <div class='title-wrap'>
-        <h2 class='title'>Robô Robin que ensina crianças a falar novas línguas</h2>
-      </div>
-      <div class='article-body'>
-        <div class='paragraph'>
+    
+    <div class='article-container'>
+      <div class='article-header'>
+        <h2 class='article-title'>Robô Robin que ensina crianças a falar novas línguas</h2>
+        <div class='article-subtitle'>
           </span>O primeiro caso de estudo é um projeto piloto executado na Alemanha, o robô chamado Robin. Um robô com formato humanóide e uma expressão amigável, tem como objetivo ensinar crianças de 4 a 6 anos a falar novas línguas.</span>
         </div>
+      </div>
+      <div class='article-body'>
+        <img src='image-article-1.jpg' alt='Imagem no corpo do texto mostar o robô Robin'/>
         <div class='paragraph'>
           </span>O projeto foi implementado em 9 escolas alemãs durante o período de Janeiro/2016 até Dezembro de 2018.</span>
         </div>
-        <img src='image-article-1.jpg' alt='Imagem no corpo do texto mostar o robô Robin'/>
         <div class='paragraph'>
           </span>Na tabela abaixo, você pode ver a transcrição de um dos diálogos feitos entre o robô Robin e uma criança.</span>
         </div>
+
+        <!-- TABLE -->
         <table class='table'>
           <tr class='table-row'>
             <th class='table-head' colspan="2">
@@ -47,6 +62,7 @@
         </table>
       </div>
     </div>
+
     <a href='https://builtin.com/robotics/robotics-in-the-classroom' aria-label='Visitar referência bibliográfica'>
       <p>Visitar referência bibliográfica</p>
     </a>

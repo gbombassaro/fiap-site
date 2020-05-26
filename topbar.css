@@ -1,0 +1,32 @@
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100vw - 48px);
+  height: 80px;
+  background-color: #4AAD52;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: fixed;
+}
+.register-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.subscribe-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0px;
+}
+.register-title {
+  margin-right: 16px;
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .register-title {
+    display: unset;
+  }
+}

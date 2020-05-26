@@ -16,18 +16,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.topbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(100vw - 48px);
-  height: 80px;
-  background-color: #4AAD52;
-  padding-left: 24px;
-  padding-right: 24px;
-  position: fixed;
-}
 
 .teaser {
   width: 100%;
@@ -54,14 +42,7 @@ body {
   margin-bottom: 0px;
 }
 
-.article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-.title-wrap {
+/* .title-wrap {
   max-width: 70%;
   display: flex;
   align-items: flex-start;
@@ -69,10 +50,10 @@ body {
 }
 .title {
   margin-bottom: 40px;
-}
-.article-body {
+} */
+/* .article-body {
   max-width: 70%;
-}
+} */
 img {
   width: 100%;
   margin-bottom: 30px;

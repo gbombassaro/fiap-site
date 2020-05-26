@@ -13,13 +13,32 @@
   margin-top: 0px;
   margin-bottom: 16px;
 }
-
 .teaser-subtitle {
   font-size: 20px;
   font-family: 'IBM Plex Sans';
   margin: 0px;
 }
 
+.article-title {
+  font-size: 32px;
+  font-family: 'Merriweather';
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.article-subtitle {
+  font-size: 20px;
+  font-family: 'IBM Plex Sans';
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.paragraph {
+  font-size: 18px;
+  font-family: 'IBM Plex Sans';
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
 
 @media (min-width: 960px) {
   .system-font {
