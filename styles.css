@@ -73,7 +73,7 @@ table, tr, th, td {
   margin-bottom: 30px;
 }
 
-.form-wrapper {
+/* .form-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -82,4 +82,4 @@ table, tr, th, td {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
+} */
