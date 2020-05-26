@@ -7,11 +7,12 @@
     <link rel='stylesheet' type='text/css' href='styles.css' />
     <link rel='stylesheet' type='text/css' href='fonts.css' />
     <link rel='stylesheet' type='text/css' href='topbar.css' />
+    <script src='welcomeMessage.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="renderWelcome()">
     <div class='topbar'>
       <h1 class='title-page'>The Daily Robots</h1>
       <a href='form.html' class='register-wrap'>

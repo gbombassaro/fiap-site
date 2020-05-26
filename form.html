@@ -9,6 +9,7 @@
     <link rel='stylesheet' type='text/css' href='fonts.css' />
     <link rel='stylesheet' type='text/css' href='topbar.css' />
     <link rel='stylesheet' type='text/css' href='register.css' />
+    <script src='form-validator.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   </head>
@@ -29,26 +30,30 @@
       <p class='system-font register-description'>Ao realizar seu cadastro um email de confirmação será enviado. Para sua segurança não repasse seus dados a ninguém. A assinatura pode ser cancelada a qualquer momento.</p>
       <form class='form'>
         <div class='input-wrapper'>
-          <label for='name-input'>Nome completo</label>
+          <label id='nameLabel' for='name-input'>Nome completo</label>
           <input id='name-input' tabindex="1" type='text'/>
         </div>
         <div class='input-wrapper'>
-          <label for='email-input'>Endereço de email</label>
+          <label id='emailLabel' for='email-input'>Endereço de email</label>
           <input id='email-input' tabindex="2" type='email'/>
         </div>
         <div class='input-wrapper'>
-          <label for='password-input'>Número de telefone</label>
-          <input id='password-input' tabindex="3" type='password'/>
+          <label id='phoneLabel' for='phone-input'>Número de telefone</label>
+          <input id='phone-input' tabindex="3" type='number'/>
         </div>
         <div class='input-wrapper'>
-          <label for='password-input'>Crie uma senha</label>
+          <label id='passwordLabel' for='password-input'>Crie uma senha</label>
           <input id='password-input' tabindex="4" type='password'/>
         </div>
       </form>
-      <button class='send-button system-font'>Enviar formulário</button>
-      <div class='status-message'>
-        <img class='success-icon' src='success-icon.svg' fill='#4AAD52'/>
+      <button onClick='validateFields()' class='send-button system-font'>Enviar formulário</button>
+      <div id='register-success-message' class='status-message success'>
+        <img class='icon' src='success-icon.svg' fill='#4AAD52'/>
         <p class='message system-font'>Seu cadastro foi realizado com sucesso!</p>
+      </div>
+      <div id='register-error-message' class='status-message error'>
+        <img class='icon' src='failure-icon.svg' fill='#4AAD52'/>
+        <p class='message system-font'>Revise os dados inseridos.</p>
       </div>
     </div>
   </body>
