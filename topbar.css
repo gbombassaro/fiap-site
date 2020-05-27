@@ -23,6 +23,7 @@
 .register-title {
   margin-right: 16px;
   display: none;
+  color: #333333;
 }
 
 @media (min-width: 960px) {

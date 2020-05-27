@@ -1,15 +1,15 @@
 function validateFields() {
-  let name = document.getElementById('name-input');
-  let email = document.getElementById('email-input');
-  let phone = document.getElementById('phone-input');
-  let password = document.getElementById('password-input');
+  var name = document.getElementById('name-input');
+  var email = document.getElementById('email-input');
+  var phone = document.getElementById('phone-input');
+  var password = document.getElementById('password-input');
 
-  let nameLabel = document.getElementById('nameLabel');
-  let emailLabel = document.getElementById('emailLabel');
-  let phoneLabel = document.getElementById('phoneLabel');
-  let passwordLabel = document.getElementById('passwordLabel');
+  var nameLabel = document.getElementById('nameLabel');
+  var emailLabel = document.getElementById('emailLabel');
+  var phoneLabel = document.getElementById('phoneLabel');
+  var passwordLabel = document.getElementById('passwordLabel');
 
-  let valid = true;
+  var valid = true;
   clearInputValidate(name, email, phone, password);
   clearLabelValidate(nameLabel, emailLabel, phoneLabel, passwordLabel);
 
@@ -52,8 +52,8 @@ function clearLabelValidate(nameLabel, emailLabel, phoneLabel, passwordLabel) {
 }
 function renderMessage(valid) {
   console.log(valid);
-  let successMessage = document.getElementById('register-success-message');
-  let errorMessage = document.getElementById('register-error-message');
+  var successMessage = document.getElementById('register-success-message');
+  var errorMessage = document.getElementById('register-error-message');
 
   if (valid) {
     successMessage.classList.add('shouldRender')
@@ -63,4 +63,16 @@ function renderMessage(valid) {
     errorMessage.classList.add('shouldRender')
     successMessage.classList.remove('shouldRender')
   }
+}
+
+function showTime() {
+  var now = getTime();
+  window.alert(now);
+}
+
+function getTime() {
+  var time = new Date();
+  var hours = time.getHours();
+  var minutes = time.getMinutes();
+  return `Horário de Brasília: ${hours}:${minutes}`;
 }
