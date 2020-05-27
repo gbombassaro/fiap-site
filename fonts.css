@@ -19,11 +19,16 @@
   font-family: 'Merriweather';
   margin-top: 0px;
   margin-bottom: 16px;
+  color: #333333;
+}
+.teaser-title:hover {
+  text-decoration: underline;
 }
 .teaser-subtitle {
   font-size: 20px;
   font-family: 'IBM Plex Sans';
   margin: 0px;
+  color: #333333;
 }
 
 .article-title {

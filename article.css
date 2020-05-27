@@ -1,3 +1,11 @@
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .article-container {
   display: flex;
   flex-direction: column;
@@ -9,6 +17,7 @@
   padding-right: 24px;
 }
 .article-container img {
+  width: 100%;
   margin-bottom: 48px;
 }
 .article-header {
@@ -16,4 +25,10 @@
 }
 .article-body {
   width: 100%;
+}
+
+@media (min-width: 960px) {
+  .article-container {
+    max-width: 960px;
+  }
 }

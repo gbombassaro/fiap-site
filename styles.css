@@ -1,5 +1,11 @@
 body {
   margin: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
 }
 .home-container {
   display: flex;
@@ -23,7 +29,26 @@ body {
   margin-bottom: 24px;
 }
 .teaser img {
+  width: 100%;
   margin-bottom: 24px;
+}
+
+@media (min-width: 960px) {
+  .home-container {
+    max-width: 1000px;
+  }
+  .teaser {
+    display: flex;
+    align-items: flex-start;
+  }
+  .teaser-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .teaser img {
+    max-width: 350px;
+    margin-right: 24px;
+  }
 }
 
 .menu-item {
@@ -54,10 +79,6 @@ body {
 /* .article-body {
   max-width: 70%;
 } */
-img {
-  width: 100%;
-  margin-bottom: 30px;
-}
 
 table, tr, th, td {
   border: 1px solid black;
