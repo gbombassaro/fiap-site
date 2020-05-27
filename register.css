@@ -64,6 +64,8 @@
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .send-button:focus {
   outline: unset;
@@ -92,4 +94,26 @@
   height: 32px;
   margin: 0px;
   margin-right: 8px;
+}
+.row-holder {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 960px) {
+  .register-container {
+    max-width: 960px;
+    align-items: flex-start;
+  }
+  .form {
+    display: flex;
+    width: 100%;
+  }
+  .send-button {
+    width: max-content;
+  }
+  .row-holder {
+    width: 50%;
+    margin-right: 42px;
+    margin-bottom: 0px;
+  }
 }

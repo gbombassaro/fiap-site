@@ -29,21 +29,25 @@
       <h2 class='system-title'>Cadastre-se e receba todas as novidades sobre robôs diretamente no seu email!</h2>
       <p class='system-font register-description'>Ao realizar seu cadastro um email de confirmação será enviado. Para sua segurança não repasse seus dados a ninguém. A assinatura pode ser cancelada a qualquer momento.</p>
       <form class='form'>
-        <div class='input-wrapper'>
-          <label id='nameLabel' for='name-input'>Nome completo</label>
-          <input id='name-input' tabindex="1" type='text'/>
+        <div class='row-holder'>
+          <div class='input-wrapper'>
+            <label id='nameLabel' for='name-input'>Nome completo</label>
+            <input id='name-input' tabindex="1" type='text'/>
+          </div>
+          <div class='input-wrapper'>
+            <label id='emailLabel' for='email-input'>Endereço de email</label>
+            <input id='email-input' tabindex="2" type='email'/>
+          </div>
         </div>
-        <div class='input-wrapper'>
-          <label id='emailLabel' for='email-input'>Endereço de email</label>
-          <input id='email-input' tabindex="2" type='email'/>
-        </div>
-        <div class='input-wrapper'>
-          <label id='phoneLabel' for='phone-input'>Número de telefone</label>
-          <input id='phone-input' tabindex="3" type='number'/>
-        </div>
-        <div class='input-wrapper'>
-          <label id='passwordLabel' for='password-input'>Crie uma senha</label>
-          <input id='password-input' tabindex="4" type='password'/>
+        <div class='row-holder'>
+          <div class='input-wrapper'>
+            <label id='phoneLabel' for='phone-input'>Número de telefone</label>
+            <input id='phone-input' tabindex="3" type='number'/>
+          </div>
+          <div class='input-wrapper'>
+            <label id='passwordLabel' for='password-input'>Crie uma senha</label>
+            <input id='password-input' tabindex="4" type='password'/>
+          </div>
         </div>
       </form>
       <button onClick='validateFields()' class='send-button system-font'>Enviar formulário</button>
