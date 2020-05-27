@@ -1,8 +1,9 @@
 body {
   margin: 0px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 a {
   text-decoration: none;
@@ -81,26 +82,11 @@ a {
 } */
 
 table, tr, th, td {
-  border: 1px solid black;
+  border: 1px solid #333333;
   border-collapse: collapse;
-  padding: 5px;
+  padding: 8px;
 }
 .table {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
-
-.paragraph {
-  margin-bottom: 30px;
-}
-
-/* .form-wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-.input-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-} */
