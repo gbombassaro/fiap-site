@@ -42,6 +42,8 @@
   border: unset;
   padding: 8px;
 }
+
+/** #paraTodosVerem */
 .input-wrapper input:focus {
   border-width: 1.5px;
   border-style: solid;
